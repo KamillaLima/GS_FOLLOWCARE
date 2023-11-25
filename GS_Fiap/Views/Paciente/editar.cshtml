@@ -1,0 +1,26 @@
+﻿@model Paciente
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/cadastrar.css" asp-append-version="true" />
+</head>
+<body>
+<form asp-action="editar">
+        <h1>Editar informações</h1>
+        <p>O cuidado com a saúde é a base sólida que sustenta uma vida plena e realizadora!</p>
+        <input asp-for="PacienteId" type="hidden" />
+    <partial name="_Formulario" />
+        <div id="alinhar">
+        <button class="botao">Editar</button>
+        </div>
+</form>
+
+</body>
+</html>

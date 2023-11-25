@@ -1,0 +1,27 @@
+﻿@model Paciente
+
+@{
+    ViewData["Title"] = "Info";
+}
+
+<h1>@Model.Nome</h1>
+
+<table class="table table-striped">
+    <tr>
+        <th>Sinopse</th>
+        <th>Duração</th>
+        <th>Bilheteria</th>
+        <th>Data Lançamento</th>
+        <th>Categoria</th>
+        <th>Disponível</th>
+        <th>Produtora</th>
+    </tr>
+    <tr>
+        <td>@Model.Nome</td>
+        <td>@Model.DataNascimento</td>
+        <td>@Model.Senha</td>
+        <td>@Model.DataNascimento.ToShortDateString()</td>
+        <td>@Model.CPF</td>
+    </tr>
+</table>
+

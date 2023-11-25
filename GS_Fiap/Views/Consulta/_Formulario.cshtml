@@ -1,0 +1,23 @@
+﻿@model Consulta
+
+
+<div>
+    <div>
+    <label asp-for="DataConsulta"> Data da consulta</label>
+        <input asp-for=" DataConsulta"  required />
+    </div>
+
+    <div>
+    <label asp-for="Paciente"></label>
+        <select  asp-for="PacienteId" asp-items="@ViewBag.paciente" required>
+        <option>Selecione</option>
+    </select>
+    </div>
+
+    <div>
+    <label asp-for="Medico"></label>
+        <select  asp-for="MedicoId" asp-items="@ViewBag.medico" required>
+        <option>Selecione</option>
+    </select>
+    </div>
+</div>

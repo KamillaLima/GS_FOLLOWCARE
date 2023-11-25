@@ -1,0 +1,59 @@
+﻿@model IEnumerable<GS_Fiap.Models.Consulta>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@if (TempData["msg"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["msg"]
+    </div>
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/listar.css" asp-append-version="true" />
+</head>
+<body>
+
+    <h1>Listagem de consultas</h1>
+    <p>O cuidado com a saúde é a base sólida que sustenta uma vida plena e realizadora!</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Nome do paciente
+            </th>
+            <th>
+                Nome do médico
+            </th>
+            <th>
+                Horário
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+   @foreach (var item in Model)
+                {
+                <tr>
+                    <td>
+                            @Html.DisplayFor(modelItem => item.Paciente.Nome)
+                    </td>
+                    <td>
+                            @Html.DisplayFor(modelItem => item.Medico.Nome)
+                    </td>
+                    <td>
+                            @Html.DisplayFor(modelItem => item.DataConsulta)
+                    </td>
+                </tr>
+                }
+
+    </tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+﻿@model Medicamento
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/cadastrarMedico.css" asp-append-version="true" />
+</head>
+<body>
+
+    <form asp-action="editar">
+        <h1>Editar Medicamento</h1>
+        <p>O cuidado com a saúde é a base sólida que sustenta uma vida plena e realizadora!</p>
+        <input asp-for="MedicamentoId" type="hidden" />
+        <input asp-for="PacienteId" type="hidden" />
+        <input asp-for="EfeitoColateralId" type="hidden" />
+        <div class="campos">
+            <label asp-for="Nome"></label>
+            <input asp-for="Nome" type="text" size="37" maxlength="130" required autocomplete="off" />
+
+
+            <label asp-for="Dosagem"></label>
+            <input asp-for="Dosagem" type="text" size="39" maxlength="30" required autocomplete="off" />
+        </div>
+
+        <div class="campos">
+            <label asp-for="Frequencia">Frequência</label>
+            <input asp-for="Frequencia" type="text" size="30" maxlength="130" required autocomplete="off" />
+
+        </div>
+
+        <fieldset>
+            <div class="mb-3">
+                <label asp-for="EfeitoColateral.Efeito">Efeito Colateral</label>
+                <input asp-for="EfeitoColateral.Efeito" class="form-control" type="text" cols="40"
+                       rows="10" maxlength="2000" required autocomplete="off" />
+            </div>
+        </fieldset>
+
+        <div id="alinhar">
+            <button class="botao">Editar</button>
+        </div>
+
+    </form>
+
+</body>
+</html>

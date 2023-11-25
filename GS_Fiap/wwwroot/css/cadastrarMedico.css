@@ -1,0 +1,96 @@
+﻿
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&family=Roboto:ital,wght@1,300&display=swap');
+
+body {
+    background-color: #F4F3F3;
+}
+
+
+.botao {
+    background-color: #7F39FB;
+    border-radius: 2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    border-color: #7F39FB;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 6rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 4rem;
+    color: #7F39FB;
+    text-transform: uppercase;
+    margin-top: 6rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin: 3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+form {
+    margin: 4rem;
+    background-color: #F4F3F3;
+    padding: 1.5rem;
+    border-radius: 4rem;
+    background-color: #FFFFFF;
+    text-align:center;
+}
+
+input {
+    background-color: #BB86FC;
+    color: white;
+    border-color: #7F39FB;
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+}
+
+label {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.botao {
+    background-color: #7F39FB;
+    border-radius: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    border-color: #7F39FB;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 6rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#alinhar {
+    text-align: center;
+}
+
+
+select{
+    width:18rem;
+    height:4rem;
+    margin-bottom:3rem;
+}

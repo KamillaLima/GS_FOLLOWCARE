@@ -1,0 +1,18 @@
+﻿@model Medico
+
+<div >
+    <div >
+        <label asp-for="Nome">Nome completo</label>
+        <input asp-for="Nome" type="text" size="40" maxlength="130" required autocomplete="off">
+    </div>
+
+    <div>
+        <label asp-for="CRM">CRM do médico</label>
+        <input asp-for="CRM" type="text" size="40" maxlength="20" required autocomplete="off">
+    </div>
+
+    <div>
+        <label asp-for="Especialidade">Especialidades </label>
+        <input asp-for="Especialidade" type="text" size="40" maxlength="30" required autocomplete="off">
+    </div>
+</div>

@@ -1,0 +1,44 @@
+﻿
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Berkshire+Swash&display=swap');
+
+
+body {
+    background-color: #C2ADE0;
+    color: #004138;
+}
+
+h1 {
+    font-size: 8rem;
+    font-family: 'Berkshire Swash', serif;
+}
+    
+
+#container {
+    display: flex;
+    flex-direction:row;
+    gap:1rem;
+}
+
+#texto {
+    font-size: 1.6rem;
+    font-family: 'Agdasima', sans-serif;
+   
+}
+
+h2{
+    border: 0.2rem solid #004138; /* largura estilo cor */
+    border-radius: 1rem;
+    font-family: 'Agdasima', sans-serif;
+    font-size:1.8rem;
+    text-align:center;
+    padding-left:3rem;
+    padding-right:3rem;
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+
+#cabecalho{
+    display:flex;
+    justify-content:space-between;
+}
+

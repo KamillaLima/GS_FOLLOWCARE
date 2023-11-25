@@ -1,0 +1,37 @@
+﻿@model Medicamento
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h1>Edição do Filme: @Model.Nome</h1>
+
+<form asp-action="editar">
+
+    <div class="mb-3">
+        <input asp-for="Nome" />
+        <label asp-for="Nome"></label>
+    </div>
+
+
+    <div class="mb-3">
+        <input asp-for="Dosagem" />
+        <label asp-for="Dosagem"></label>
+    </div>
+
+    <div class="mb-3">
+        <input asp-for="Frequencia" />
+        <label asp-for="Frequencia"></label>
+    </div>
+
+    <div class="mb-3">
+        <input asp-for="PacienteId" />
+        <label asp-for="PacienteId"></label>
+    </div>
+
+
+
+    <button class="btn btn-outline-primary">Editar</button>
+
+</form>
+

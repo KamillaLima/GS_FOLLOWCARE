@@ -1,0 +1,25 @@
+﻿@model Medicamento
+
+@{
+    ViewData["Title"] = "Info";
+}
+
+<h1>@Model.Nome</h1>
+
+<table class="table table-striped">
+    <tr>
+        <th>Sinopse</th>
+        <th>Duração</th>
+        <th>Bilheteria</th>
+        <th>Data Lançamento</th>
+        <th>Categoria</th>
+        <th>Disponível</th>
+        <th>Produtora</th>
+    </tr>
+    <tr>
+        <td>@Model.Nome</td>
+        <td>@Model.Dosagem</td>
+        <td>@Model.Frequencia</td>
+    </tr>
+</table>
+
